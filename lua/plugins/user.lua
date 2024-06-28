@@ -1,13 +1,3 @@
--- since this is just an example spec, don't actually load anything here and return an empty spec
--- stylua: ignore
-if true then return {} end
-
--- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
---
--- In your plugin files, you can:
--- * add extra plugins
--- * disable/enabled LazyVim plugins
--- * override the configuration of LazyVim plugins
 return {
   -- change trouble config
   {
@@ -40,10 +30,6 @@ return {
   },
 
 
-  -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
-  -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
-  -- { import = "lazyvim.plugins.extras.lang.typescript" },
-
   -- add more treesitter parsers
   {
     "nvim-treesitter/nvim-treesitter",
@@ -74,32 +60,14 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "python",
         "cpp",
+        "c",
+        "lua",
+        "cmake",
+        "yaml",
+        "json",
       })
     end,
   },
-
-  -- the opts function can also be used to change the default opts:
-  -- {
-  --   "nvim-lualine/lualine.nvim",
-  --   event = "VeryLazy",
-  --   opts = function(_, opts)
-  --     table.insert(opts.sections.lualine_x, "😄")
-  --   end,
-  -- },
-
-  -- -- or you can return new options to override all the defaults
-  -- {
-  --   "nvim-lualine/lualine.nvim",
-  --   event = "VeryLazy",
-  --   opts = function()
-  --     return {
-  --       --[[add your custom lualine config here]]
-  --     }
-  --   end,
-  -- },
-
-  -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
-  { import = "lazyvim.plugins.extras.lang.json" },
 
   -- add any tools you want to have installed below
   {
@@ -107,10 +75,21 @@ return {
     opts = {
       ensure_installed = {
         "stylua",
+        "clangd",
         -- "shellcheck",
         -- "shfmt",
         -- "flake8",
       },
     },
+  },
+  -- { "navarasu/onedark.nvim" },
+  { "Mofiqul/vscode.nvim" },
+  -- { "projekt0n/github-nvim-theme" },
+  {
+    "nvim-treesitter/nvim-treesitter-context" ,
+    dependencies = {"nvim-treesitter/nvim-treesitter"},
+    config = function()
+      require("treesitter-context").setup()
+    end
   },
 }
