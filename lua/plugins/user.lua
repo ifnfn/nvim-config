@@ -72,4 +72,9 @@ return {
       require("treesitter-context").setup()
     end
   },
+  {
+    "ibhagwan/fzf-lua",
+    -- optional for icon support
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  }
 }

@@ -8,6 +8,8 @@ local g = vim.g
 opt.spell = false
 
 
+g.lazyvim_picker = "fzf"
+
 -- 设置全局主题
 g.colors_name = "gruvbox"
 
