@@ -1,12 +1,12 @@
 return {
   -- disable trouble
-  { "folke/trouble.nvim", enabled = false }, -- 错误提示
+  -- { "folke/trouble.nvim", enabled = false }, -- 错误提示
   { "folke/todo-comments.nvim", enabled = false}, -- 注释
   { "windwp/nvim-ts-autotag", enabled = false}, -- 自动补全标签
   { "gbprod/yanky.nvim", enabled = false}, -- 复制粘贴
   { "RRethy/vim-illuminate", enabled = false }, -- 高亮当前单词
   { "rafamadriz/friendly-snippets", enabled = false },
-  { "saghen/blink.cmp", enabled = false }, -- 代码补全
+  -- { "saghen/blink.cmp", enabled = false }, -- 代码补全
   { "akinsho/bufferline.nvim", enabled = false}, -- 底部标签页
   -- { "folke/noice.nvim", enabled = false }, -- 消息提示
   -- { "lewis6991/gitsigns.nvim", enabled = false }, -- git 符号

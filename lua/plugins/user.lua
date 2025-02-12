@@ -1,11 +1,4 @@
 return {
-  -- change trouble config
-  {
-    "folke/trouble.nvim",
-    -- opts will be merged with the parent spec
-    opts = { use_diagnostic_signs = true },
-  },
-
   -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
@@ -76,5 +69,8 @@ return {
     "ibhagwan/fzf-lua",
     -- optional for icon support
     dependencies = { "nvim-tree/nvim-web-devicons" },
-  }
+  },
+  {
+      "neomake/neomake"
+  },
 }
