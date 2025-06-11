@@ -42,25 +42,9 @@ return {
     end,
   },
 
-  -- add any tools you want to have installed below
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "clangd",
-        -- "shellcheck",
-        -- "shfmt",
-        -- "flake8",
-      },
-    },
-  },
-  -- { "navarasu/onedark.nvim" },
-  { "Mofiqul/vscode.nvim" },
-  -- { "projekt0n/github-nvim-theme" },
-  {
-    "nvim-treesitter/nvim-treesitter-context" ,
-    dependencies = {"nvim-treesitter/nvim-treesitter"},
+    "nvim-treesitter/nvim-treesitter-context",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
     config = function()
       require("treesitter-context").setup()
     end
@@ -71,6 +55,6 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   {
-      "neomake/neomake"
+    "neomake/neomake"
   },
 }
