@@ -8,13 +8,13 @@ return {
       -- table.remove(opts.config.center, 6)
       -- table.remove(opts.config.center, 7)
 
-    --   table.insert(opts.config.center, 7, {
-    --     action = 'lua require("persistence").load()',
-    --     desc = "Bookmarks",
-    --     icon = "  ",
-    --     key = "b",
-    --     key_format = "  %s"
-    --   })
+      --   table.insert(opts.config.center, 7, {
+      --     action = 'lua require("persistence").load()',
+      --     desc = "Bookmarks",
+      --     icon = "  ",
+      --     key = "b",
+      --     key_format = "  %s"
+      --   })
     end,
   },
 }

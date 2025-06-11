@@ -11,7 +11,7 @@ return {
   {
     "folke/todo-comments.nvim",
     opts = {
-      sign_priority = 5,       -- higher sign display priority
+      sign_priority = 5, -- higher sign display priority
     },
   },
   {

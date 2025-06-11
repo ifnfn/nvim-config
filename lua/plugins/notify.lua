@@ -14,7 +14,7 @@ return {
     level = 1,
     stages = "static",
     timeout = 3000,
-    render = "simple",     -- default, simple, minimal, compact
+    render = "simple", -- default, simple, minimal, compact
     max_height = function()
       return math.floor(vim.o.lines * 0.75)
     end,
