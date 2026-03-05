@@ -12,7 +12,7 @@ return {
   -- { "lewis6991/gitsigns.nvim", enabled = false }, -- git 符号
   { "mfussenegger/nvim-lint",       enabled = false }, -- 代码检查
   -- { "nvim-lualine/lualine.nvim", enabled = false }, -- 底部状态栏
-  { "echasnovski/mini.pairs",       enabled = false }, -- 括号补全
+  { "nvim-mini/mini.pairs",       enabled = false }, -- 括号补全
   -- { "folke/snacks.nvim", enabled = false }, -- 消息提示
   -- { "nvim-telescope/telescope-fzf-native.nvim", enabled = false }, -- 搜索
   -- { "echasnovski/mini.ai", enabled = false },
