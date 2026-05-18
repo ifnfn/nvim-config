@@ -9,9 +9,7 @@ opt.spell = false
 
 
 g.lazyvim_picker = "fzf"
-
--- 设置全局主题
-g.colors_name = "gruvbox"
+g.lazyvim_python_lsp = "basedpyright"
 
 -- Global Settings --
 -- 高亮光标行
@@ -28,8 +26,6 @@ opt.backup = false
 
 -- 更新时间
 opt.updatetime = 50
--- 右侧参考线，超过表示代码太长了，考虑换行
-vim.wo.signcolumn = "yes"
 -- 持久化撤销历史
 opt.undofile = true
 -- 撤销文件保存路径
@@ -39,7 +35,7 @@ opt.exrc = true
 -- 禁用自动换行
 opt.wrap = true
 -- 自动补全不自动选中
-g.completeopt = "menu,menuone,noselect,noinsert"
+opt.completeopt = "menu,menuone,noselect,noinsert"
 -- 搜索时高亮
 opt.hlsearch = true
 
@@ -94,5 +90,3 @@ opt.expandtab = true
 opt.shiftround = true
 opt.autoindent = true
 opt.smartindent = true
-
-undodir = vim.fn.expand "$HOME" .. "/.cache/vim-undo" -- set an undo directory

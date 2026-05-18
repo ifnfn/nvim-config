@@ -9,12 +9,18 @@ return {
       },
       ---@type lspconfig.options
       servers = {
-        -- pyright will be automatically installed with mason and loaded with lspconfig
-        pyright = {
-
-        },
-        clangd = {
-
+        clangd = {},
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              analysis = {
+                typeCheckingMode = "standard", -- off | basic | standard | strict | all
+                autoImportCompletions = true,
+                diagnosticMode = "openFilesOnly", -- 仅分析当前打开的文件，省 CPU
+                useLibraryCodeForTypes = true,
+              },
+            },
+          },
         },
       },
       diagnostics = {

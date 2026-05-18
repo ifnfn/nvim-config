@@ -11,7 +11,7 @@ return {
     },
   },
   opts = {
-    level = 1,
+    level = vim.log.levels.WARN, -- 只显示 WARN 及以上，避免被 DEBUG/INFO 刷屏
     stages = "static",
     timeout = 3000,
     render = "simple", -- default, simple, minimal, compact

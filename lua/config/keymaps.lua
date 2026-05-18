@@ -11,8 +11,8 @@ map("n", "<Leader>tf", "<Cmd>ToggleTerm direction=float<CR>", {desc = "ToggleTer
 map("n", "<Leader>th", "<Cmd>ToggleTerm size=10 direction=horizontal<CR>", {desc = "ToggleTerm horizontal split" })
 map("n", "<Leader>tv", "<Cmd>ToggleTerm size=10 direction=vertical<CR>", {desc = "ToggleTerm vertical split" })
 
-map("n", "\\\\", ":Telescope jumplist <CR>", { desc = "Jump List" })
-map("n", "<Leader>ba", ":Telescope buffers <CR>", {desc = "Jump buffer list" })
+map("n", "\\\\", "<Cmd>FzfLua jumps<CR>", { desc = "Jump List" })
+map("n", "<Leader>ba", "<Cmd>FzfLua buffers<CR>", { desc = "Jump buffer list" })
 
 
 -- map("n", "<Leader>q", "<Cmd>confirm q<CR>", { desc = "Quit Window" })
